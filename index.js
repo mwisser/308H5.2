@@ -61,3 +61,51 @@ const panagram4 = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy
 const indexWord = panagram4.findIndex(word => word.length < 2);
 
 console.log(indexWord);
+
+// For Each Number
+
+const nums5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0];
+
+nums.forEach(num => {
+  const multipliedValue = num * 3;
+  console.log(multipliedValue);
+});
+
+// For Each Word
+
+const panagram5 = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog'];
+
+panagram.forEach(word => {
+  console.log(word + '!');
+});
+
+// Map Number
+
+const nums6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0];
+const multipliedNums = nums.map(num => num * 100);
+
+console.log(multipliedNums);
+
+// Map Word
+
+const panagram6 = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog'];
+
+const uppercaseArray = panagram.map(word => word.toUpperCase());
+
+console.log(uppercaseArray);
+
+// Some Number
+
+const nums7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0];
+
+const isDivisibleBy7 = nums.some(num => num % 7 === 0);
+
+console.log(isDivisibleBy7);
+
+// Some Word
+
+const panagram7 = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog'];
+
+const containsLetterA = panagram.some(word => word.toLowerCase().includes('a'));
+
+console.log(containsLetterA);
